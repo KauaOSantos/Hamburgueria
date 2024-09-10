@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Restaurante MS</title>
+</head>
+<body>
+    
+    <header id="header-site">
+        <div id = "img-header">
+
+            <img src="./images-removebg-preview.png" alt="Hamburgueria MS">
+        </div>
+
+        <nav id="nav-header">
+            <div class="box-bnt-hamburguer">
+                <button class="bnt-hamburguer">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
+            <ul>
+                <li class="item-nav-header">
+                    <a href="#">Inicio</a>
+                </li>
+                <li class="item-nav-header">
+                    <a href="#">Sobre</a>
+                </li>
+                <li class="item-nav-header">
+                    <a href="#">Cardápio</a>
+                 </li>
+                <li class="item-nav-header">
+                    <a href="#">Pedido</a>
+                </li>
+                <li class="item-nav-header">
+                    <a href="#">Contato</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+</body>
+<script>
+
+
+    var bntHamburguer = document.getElementsByClassName("btn-hamburguer");
+    var navHeader = document.querySelector("#nav-header ul");
+
+    bntHamburguer.addEventListener('click', function(evento){
+        evento.preventDefault();
+
+        navHeader.classList.toggle('ativo');
+    });
+
+var formulario = document.getElementById("formulario");
+
+formulario.addEventListener('submit', function(eventoFormulario){
+    eventoFormulario.preventDefault();
+
+    var inputUsuario = document.getElementById("usuario");
+    valorUsuario = inputUsuario.value.trim();
+}
+
+
+</script>
+</html>
